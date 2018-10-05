@@ -36,6 +36,18 @@ namespace DevConsole
                 Console.WriteLine(evaluation.report);
             }
 
+            var questionnaires = testingDB.GetQuestionnaires();
+
+            Console.WriteLine();
+            Console.WriteLine("GetQuestionnaires:");
+
+            foreach (var questionnaire in questionnaires)
+            {
+                Console.WriteLine(questionnaire.evaluation_id);
+                Console.WriteLine(questionnaire.description);
+                Console.WriteLine("antal spørgsmål i questionnaire: {0}", questionnaire.questions.Count);
+            }
+
 
             Console.Read();
         }

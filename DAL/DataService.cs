@@ -15,7 +15,7 @@ namespace DAL
             using (var db = new EvalContext())
             {
                 return db.Course
-                    .OrderBy(c => c.course_id)
+                    .OrderBy(x => x.course_id)
                     .ToList();
             }
         }
@@ -25,7 +25,37 @@ namespace DAL
             using (var db = new EvalContext())
             {
                 return db.Evaluation
-                    .OrderBy(e => e.evaluation_id)
+                    .OrderBy(x => x.evaluation_id)
+                    .ToList();
+            }
+        }
+
+        public List<Questionnaire> GetQuestionnaires()
+        {
+            using (var db = new EvalContext())
+            {
+                return db.Questionnaire
+                    .OrderBy(x => x.questionnaire_id)
+                    .ToList();
+            }
+        }
+
+        public List<Question> GetQuestions()
+        {
+            using (var db = new EvalContext())
+            {
+                return db.Question
+                    .OrderBy(x => x.question_id)
+                    .ToList();
+            }
+        }
+
+        public List<QuestionOption> GetQuestionOptions()
+        {
+            using (var db = new EvalContext())
+            {
+                return db.Question_Option
+                    .OrderBy(x => x.question_option_id)
                     .ToList();
             }
         }

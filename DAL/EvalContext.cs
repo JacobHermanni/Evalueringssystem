@@ -13,7 +13,14 @@ namespace DAL
         // database mapping to class models
 
         public DbSet<Course> Course { get; set; }
+
         public DbSet<Evaluation> Evaluation { get; set; }
+
+        public DbSet<Questionnaire> Questionnaire { get; set; }
+
+        public DbSet<Question> Question { get; set; }
+
+        public DbSet<QuestionOption> Question_Option { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

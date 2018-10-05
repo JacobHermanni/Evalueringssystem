@@ -9,5 +9,11 @@ namespace DAL
         List<Course> GetCourses();
 
         List<Evaluation> GetEvaluations();
+
+        List<Questionnaire> GetQuestionnaires();
+
+        List<Question> GetQuestions();
+
+        List<QuestionOption> GetQuestionOptions();
     }
 }
