@@ -11,7 +11,7 @@ namespace DAL
     {
         // database mapping to class models
 
-        public DbSet<Course> Post { get; set; }
+        public DbSet<Course> Course { get; set; }
        
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

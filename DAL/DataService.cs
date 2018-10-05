@@ -14,8 +14,8 @@ namespace DAL
         {
             using (var db = new TestingContext())
             {
-                return db.Post
-                    .OrderBy(x => x.course_id)
+                return db.Course
+                    .OrderBy(x => x.id)
                     .ToList();
             }
         }

@@ -4,15 +4,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
-namespace DAL
+namespace DAL.Models
 {
-    public class Course
+    class Evaluation
     {
         [Key]
         public int id { get; set; }
 
-        public string name { get; set; }
-
+        public string course_id { get; set; }
 
     }
 }

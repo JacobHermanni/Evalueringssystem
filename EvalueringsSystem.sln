@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{DC937A4D-6D6D-48FE-B7D7-7263A0AC9BB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{DC937A4D-6D6D-48FE-B7D7-7263A0AC9BB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevConsole", "DevConsole\DevConsole.csproj", "{9201E669-BCE9-4C50-BA8D-C70DBC907C85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{08044D95-18CF-488F-BDFC-B8A8C1B94BE5}"
+	ProjectSection(SolutionItems) = preProject
+		testing\course.frm = testing\course.frm
+		testing\course.ibd = testing\course.ibd
+		testing\db.opt = testing\db.opt
+		testing\user.frm = testing\user.frm
+		testing\user.ibd = testing\user.ibd
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +26,10 @@ Global
 		{DC937A4D-6D6D-48FE-B7D7-7263A0AC9BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC937A4D-6D6D-48FE-B7D7-7263A0AC9BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC937A4D-6D6D-48FE-B7D7-7263A0AC9BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9201E669-BCE9-4C50-BA8D-C70DBC907C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9201E669-BCE9-4C50-BA8D-C70DBC907C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9201E669-BCE9-4C50-BA8D-C70DBC907C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9201E669-BCE9-4C50-BA8D-C70DBC907C85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
