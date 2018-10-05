@@ -4,15 +4,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using DAL.Models;
 
 namespace DAL
 {
-    public class TestingContext : DbContext
+    public class EvalContext : DbContext
     {
         // database mapping to class models
 
         public DbSet<Course> Course { get; set; }
-       
+        public DbSet<Evaluation> Evaluation { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -20,7 +22,7 @@ namespace DAL
 
             optionsBuilder.UseMySql(
                 "server=localhost;" +
-                "database=testing;" +
+                "database=evaluation;" +
                 "uid=root;" +
                 "pwd=root;"
 

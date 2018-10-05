@@ -6,12 +6,14 @@ using System.Linq;
 
 namespace DAL.Models
 {
-    class Evaluation
+    public class Evaluation
     {
         [Key]
-        public int id { get; set; }
+        public int evaluation_id { get; set; }
 
-        public string course_id { get; set; }
+        public int course_id { get; set; }
 
+        //TODO: remove this. Instead link to evaluation with id from report table containing cleartext and file/path to file(?)
+        public string report { get; set; }        
     }
 }

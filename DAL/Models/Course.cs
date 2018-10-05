@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text;
 using System.Linq;
+using DAL.Models;
 
-namespace DAL
+namespace DAL.Models
 {
     public class Course
     {
         [Key]
-        public int id { get; set; }
+        public int course_id { get; set; }
 
-        public string name { get; set; }
-
-
+        public string course_name { get; set; }
     }
 }
